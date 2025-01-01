@@ -1,0 +1,197 @@
+/* Global Styles */
+body {
+  background-color: #E8F5E9;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Heading Styles */
+h1 {
+  font-size: 2.5rem;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 2px;
+  background: linear-gradient(to right, #4CAF50, #81C784);
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: titleAnimation 2s ease-in-out infinite alternate;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Plant Card Styling */
+.plant-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin: 16px;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
+
+.plant-card h3 {
+  color: #4CAF50;
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.plant-card h4 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.plant-card p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.plant-card div p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Image Styling */
+.plant-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+/* Care Instructions Button */
+.care-button {
+  background-color: #FF9800;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.care-button:hover {
+  background-color: #FB8C00;
+}
+
+/* Care Instructions Styling */
+.care-instructions {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  display: none; /* Hide by default */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+
+/* Search Container */
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+/* Search Bar Styling */
+.search-bar {
+  width: 70%;
+  max-width: 400px;
+  padding: 10px;
+  border: 2px solid #4CAF50;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.search-bar:focus {
+  border-color: #1b5e20;
+  background-color: #e8f5e9;
+}
+
+/* Search Button Styling */
+.search-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #2e7d32;
+}
+
+/* Plant List Styling */
+.plant-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .plant-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .plant-card {
+    width: 80%;
+    margin: 10px auto;
+  }
+
+  .plant-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .plant-card p {
+    font-size: 14px;
+  }
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 480px) {
+  .plant-card {
+    width: 90%;
+  }
+
+  .plant-card h3 {
+    font-size: 1.1rem;
+  }
+}
+/* Care Instructions Styling */
+.care-instructions {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  display: block; /* Show by default when active */
+  opacity: 1; /* Ensure visibility when active */
+  transition: opacity 0.3s ease-in-out;
+}
+
+
